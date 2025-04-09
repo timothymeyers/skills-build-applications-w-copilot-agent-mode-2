@@ -6,7 +6,7 @@ from .models import User, Team, Activity, Leaderboard, Workout
 
 @api_view(['GET'])
 def api_root(request, format=None):
-    base_url = 'http://localhost:8000/'
+    base_url = 'https://expert-happiness-9w4j5v976qc7wx9-8000.app.github.dev/' if 'expert-happiness-9w4j5v976qc7wx9-8000.app.github.dev' in request.get_host() else 'http://localhost:8000/'
     return Response({
         'users': base_url + 'api/users/',
         'teams': base_url + 'api/teams/',
