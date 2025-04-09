@@ -58,6 +58,7 @@ body {
   color: #ffffff !important;
   transform: translateY(-2px);
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.15);
+  text-decoration: none; /* Prevent underline on hover */
 }
 
 .navbar .navbar-nav .nav-link:active {
