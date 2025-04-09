@@ -15,7 +15,6 @@ const Leaderboard = () => {
       <table className="table table-striped">
         <thead>
           <tr>
-            <th>ID</th>
             <th>Name</th>
             <th>Score</th>
           </tr>
@@ -23,8 +22,8 @@ const Leaderboard = () => {
         <tbody>
           {leaders.map(leader => (
             <tr key={leader.id}>
-              <td>{leader.id}</td>
-              <td>{leader.name}</td>
+
+              <td>{leader.user.username}</td>
               <td>{leader.score}</td>
             </tr>
           ))}

@@ -15,15 +15,15 @@ const Teams = () => {
       <table className="table table-striped">
         <thead>
           <tr>
-            <th>ID</th>
             <th>Name</th>
+            <th>Members</th>
           </tr>
         </thead>
         <tbody>
           {teams.map(team => (
             <tr key={team.id}>
-              <td>{team.id}</td>
               <td>{team.name}</td>
+              <td>{team.members.map(member => member.username).join(', ')}</td>
             </tr>
           ))}
         </tbody>
